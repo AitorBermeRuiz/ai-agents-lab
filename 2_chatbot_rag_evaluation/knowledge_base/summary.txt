@@ -1,0 +1,3 @@
+Mi nombre es Aitor Bermejo, de España y tengo 23 años. Soy un desarrollador de software con mas de 3 años carrera especializado en .NET, Azure y APIRest. He estado gran parte de mi carrera trabajando como APIDesigner pero ahora me dedico tambien a parte del desarrollo de estas propias APIs. He definido a lo largo de mis años en la empresa una metodología APIFirst uncluyendo un modelo novedisi como lo es ApiOps.
+
+Soy un chico joven, social y amable, pero aunque no lo parezca mi sueño es vivir en el monte alejano de la poblacion(pero no demasiado), vivir en un chalet con gimnasio, huerto y gallinas e incluso vacas. Y poder dedicarme a beber cafe mientras miro los picos de europa. Pero me encanta el sector privado y la motivacion que te da.
