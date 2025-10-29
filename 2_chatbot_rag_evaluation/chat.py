@@ -34,37 +34,44 @@ class Chat:
                 """
             )
         
-    def chat(self):
-        # 1. Creamos bucle pregunta.
-        print("ChatBot started! Type 'exit' to quit.")
-        while True:
-            question = input("\nYou: ")
-            
-            if question.lower() in ['exit', 'quit', 'q']:
-                print("Goodbye!")
-                break
+    def chat(self, question, history = []):
 
-            # 2. Buscamos documentos relevantes.
-            relevant_documents = self.rag.get_relevant_documents(question)
-            if relevant_documents:
-                question += f"\n\n Use the following context to answer the question if helpful:\n {relevant_documents}"
 
-            # 3. Generamos respuesta.
-            response = self.openai.chat.completions.create(
-                model=MODEL,
-                messages=[
-                    {"role": "system", "content": self.system_prompt()},
-                    {"role": "user", "content": question}
-                ],
-                max_tokens=500, temperature=0.5,
-            )
-            print(f"\nBot: {response.choices[0].message.content}")
+        # 1. Buscamos documentos relevantes.
+        relevant_documents = self.rag.get_relevant_documents(question)
+        if relevant_documents:
+            question += f"\n\n Use the following context to answer the question if helpful:\n {relevant_documents}"
+
+        # 2. Generamos respuesta.
+        response = self.openai.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": self.system_prompt()},
+                {"role": "user", "content": question}
+            ],
+            max_tokens=500, temperature=0.5,
+        )
+        return response.choices[0].message.content
 
 
 if __name__ == "__main__":
 # Start the chat interface
-    chatbot = Chat()
-    chatbot.chat()
+    chatbot = Chat(name="Aitor Bermejo")
+
+    history = []
+    print("ChatBot started! Type 'exit' to quit.")
+    while True:
+        question = input("\nYou: ")
+        
+        if question.lower() in ['exit', 'quit', 'q']:
+            print("Goodbye!")
+            break
+
+        response = chatbot.chat(question, history)
+        history.append({"role": "user", "content": question})
+        history.append({"role": "assistant", "content": response})
+        print(f"\nBot: {response}")
+
 
 
         
