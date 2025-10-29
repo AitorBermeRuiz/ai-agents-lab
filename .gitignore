@@ -186,3 +186,4 @@ cython_debug/
 career_db/
 *_db/
 *.chroma
+post_linkdin/
