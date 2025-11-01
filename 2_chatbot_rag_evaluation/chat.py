@@ -35,20 +35,20 @@ class Chat:
             )
         
     def chat(self, question, history = []):
-
-
         # 1. Buscamos documentos relevantes.
         relevant_documents = self.rag.get_relevant_documents(question)
         if relevant_documents:
             question += f"\n\n Use the following context to answer the question if helpful:\n {relevant_documents}"
 
         # 2. Generamos respuesta.
+        message=[
+                {"role": "system", "content": self.system_prompt()} 
+                ] + history + [
+                {"role": "user", "content": question}
+            ]
         response = self.openai.chat.completions.create(
             model=MODEL,
-            messages=[
-                {"role": "system", "content": self.system_prompt()},
-                {"role": "user", "content": question}
-            ],
+            messages= message,
             max_tokens=500, temperature=0.5,
         )
         return response.choices[0].message.content
