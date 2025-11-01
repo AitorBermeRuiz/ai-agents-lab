@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from rag_v1 import Rag_V1
+# from rag_v1 import Rag_V1
 
 
 load_dotenv(override=True)
@@ -15,7 +15,7 @@ class Chat:
     def __init__(self, name=NAME):
         self.openai = OpenAI()
         self.name = name
-        self.rag = Rag_V1()
+        # self.rag = Rag_V1()
 
     
     
@@ -34,11 +34,9 @@ class Chat:
                 """
             )
         
-    def chat(self, question, history = []):
-        # 1. Buscamos documentos relevantes.
-        relevant_documents = self.rag.get_relevant_documents(question)
-        if relevant_documents:
-            question += f"\n\n Use the following context to answer the question if helpful:\n {relevant_documents}"
+    def chat(self, question, history = [], context = None):
+        if context:
+            question += f"\n\n Use the following context to answer the question if helpful:\n {context}"
 
         # 2. Generamos respuesta.
         message=[
@@ -52,26 +50,3 @@ class Chat:
             max_tokens=500, temperature=0.5,
         )
         return response.choices[0].message.content
-
-
-if __name__ == "__main__":
-# Start the chat interface
-    chatbot = Chat(name="Aitor Bermejo")
-
-    history = []
-    print("ChatBot started! Type 'exit' to quit.")
-    while True:
-        question = input("\nYou: ")
-        
-        if question.lower() in ['exit', 'quit', 'q']:
-            print("Goodbye!")
-            break
-
-        response = chatbot.chat(question, history)
-        history.append({"role": "user", "content": question})
-        history.append({"role": "assistant", "content": response})
-        print(f"\nBot: {response}")
-
-
-
-        
