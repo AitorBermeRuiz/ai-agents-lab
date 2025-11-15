@@ -1,0 +1,141 @@
+## Core Professional Profile
+
+### **SECTION 1: Core Professional Profile (The "Elevator Pitch")**
+
+This section answers "Who are you?" and "What are you looking for?"
+
+#### **1.1: Metadata (Fact Sheet)**
+
+  * **Name:** Aitor Bermejo Ruiz
+  * **Role:** Cloud Solution Developer / .NET API Developer
+  * **Total Experience:** 2+ years of professional development
+  * **Specialties:** .NET Backend, Microsoft Azure, RESTful APIs, DevOps (ApiOps)
+  * **Career Goal:** Evolving into AI Engineering & Software Architecture
+  * **Location:** Madrid, Spain (Base)
+  * **Languages:** Spanish (Native), English (Intermediate - B2)
+  * **Contact:** aitorbermeruiz@gmail.com | +34 635 95 42 92
+  * **LinkedIn:** [linkedin.com/in/aitor-bermejo-ruiz-991722164](https://www.google.com/search?q=https://linkedin.com/in/aitor-bermejo-ruiz-991722164)
+  * **GitHub:** [github.com/AitorBermeRuiz](https://www.google.com/search?q=https://github.com/AitorBermeRuiz)
+
+#### **1.2: Professional Summary (The "Why")**
+
+> I am a backend developer specialized in **Microsoft Azure** and **.NET APIs** with over 2 years of experience building robust, enterprise-scale applications. My core strength is turning complex business requirements into clean, efficient, and maintainable software architectures.
+
+> My defining characteristic is a relentless drive for growth; I am not satisfied with "good enough" or stagnation. I am now channeling this passion by actively learning **Python** and **AI/ML principles** to transition my strong backend and cloud architecture skills into the **AI Engineering** domain.
+
+-----
+
+### **SECTION 2: Technical Skill Matrix (The "Cheat Sheet")**
+
+This section provides a high-level, queryable list of all technical skills.
+
+| Category | Skills (Proficiency) |
+| :--- | :--- |
+| **Backend** | **C\# (Expert)**, **.NET 8/7/6 (Expert)**, **ASP.NET Core (Web API, Minimal API)**, Entity Framework Core, Java (Academic), Python (Learning) |
+| **Cloud & DevOps** | **Microsoft Azure (Certified AZ-204)**, **Azure API Management (APIM)**, **Azure Functions**, Azure Logic Apps, **Azure DevOps (Pipelines, Repos)**, CI/CD (YAML), Git, Docker (Familiar) |
+| **API Design** | **OpenAPI 3.0 (Expert)**, **RESTful Principles**, API-First Design, SwaggerHub, Postman, Spectral (Linting), API Versioning, OAuth 2.0 |
+| **Databases** | SQL Server, Azure SQL Database, SQL (Proficient), Oracle (Academic), CosmosDB (Familiar), ChromaDB (Learning) |
+| **AI (Learning)** | **RAG (Retrieval-Augmented Generation)**, **LangChain**, Vector Databases, Prompt Engineering, OpenAI API, Model Context Protocol (MCP) |
+
+-----
+
+### **SECTION 3: Professional Experience (The "Proof")**
+
+This section details practical application of skills.
+
+#### **3.1: Company: Nationale-Nederlanden (Insurance & Finance)**
+
+  * **Role:** ES API Developer / Cloud Solution Developer
+  * **Duration:** November 2022 – Present (2+ years)
+  * **Context:** Part of a backend team designing, implementing, and maintaining the complete API ecosystem powering all digital services for a major Spanish insurer.
+
+#### **3.2: Key Achievement: Architecting the 'ApiOps' Model from Scratch**
+
+  * **The Problem:** Manual deployments, desynchronized documentation, and no enforcement of API standards, leading to production errors and slow delivery.
+  * **My Solution:** I led the technical design and implementation of a new **ApiOps model** that completely automated our API lifecycle.
+      * Built a full **CI/CD pipeline in Azure DevOps** for automated API deployment.
+      * Enforced **OpenAPI 3.0** contracts as the "single source of truth."
+      * Integrated **Stoplight Spectral** for automatic linting/validation of contracts in the pipeline.
+      * Automated deployment and governance in **Azure API Management (APIM)**.
+  * **Measurable Impact:**
+      * **70% reduction** in API deployment time.
+      * **90% reduction** in production errors related to contract mismatches.
+      * Evangelized the model to the team, making it the new standard.
+
+#### **3.3: Key Achievement: Azure API Management (APIM) Expertise**
+
+  * **Responsibilities:** Full administration of the Azure APIM gateway.
+      * **Policy Development:** Wrote custom XML policies for authentication (OAuth 2.0 / Azure AD), rate limiting, throttling, and request/response transformation.
+      * **Security & Governance:** Configured API products, subscription keys, and API versioning strategies.
+      * **Monitoring:** Used APIM analytics to monitor API health and usage.
+
+#### **3.4: Key Achievement: OpenAPI 3.0 Contract Optimization**
+
+  * **Responsibilities:** Designed professional, reusable OpenAPI 3.0.1 contracts.
+      * **Optimization:** Refactored existing contracts using inheritance and reusable components (`$ref`).
+      * **Result:** Achieved a **6.4% reduction in code lines** while improving readability and maintainability.
+      * **Tooling:** Used **OasDiff** for contract change validation and **Spectral** for linting.
+
+#### **3.5: Daily Responsibilities**
+
+  * **Development:** Build **C\# .NET 8 Minimal APIs** and **Azure Functions** (HTTP, Timer, Queue triggers) for serverless processing.
+  * **Orchestration:** Create complex workflows using **Azure Logic Apps**.
+  * **Collaboration:** Work with Product Owners and stakeholders to translate complex business needs into clear technical API designs (API-First methodology).
+
+-----
+
+### **SECTION 4: Certifications & Education (The "Credentials")**
+
+This section validates the skills.
+
+#### **4.1: Professional Certifications (Microsoft Azure)**
+
+  * **Microsoft Certified: Azure Developer Associate (AZ-204)**
+      * **Date:** 2024
+      * **Validates:** Expertise in developing, deploying, and debugging Azure solutions (App Services, Functions, Storage, Security, Monitoring).
+  * **Microsoft Certified: Azure Fundamentals (AZ-900)**
+      * **Date:** 2023
+      * **Validates:** Foundational knowledge of cloud concepts and core Azure services.
+
+#### **4.2: Formal Education**
+
+  * **Higher-Level Degree: Multiplatform Application Development (DAM)**
+      * **Institute:** IES El Cañaveral, Madrid (2020 - 2022)
+      * **Average Grade:** 8/10
+      * **Core Skills:** Advanced Java (OOP), C\# (.NET, WPF), Python (Scripting), SQL (Oracle, MySQL), Git.
+  * **Mid-Level Degree: Microcomputer Systems & Networks (SMR)**
+      * **Institute:** IES El Cañaveral, Madrid (2018 - 2020)
+      * **Core Skills:** Hardware, networking (TCP/IP), and OS (Windows/Linux) fundamentals.
+
+-----
+
+### SECTION 5: Career Focus: The .NET to AI Engineering Transition
+
+#### 5.1: Primary Objective: AI Engineering
+My primary, immediate career goal is to **transition from a pure Backend/Cloud role into AI Engineering**.
+
+I am strategically leveraging my 2+ years of enterprise-scale architecture (.NET) and cloud (Azure) experience to build the next generation of AI-integrated systems. My entire personal learning time is dedicated to this pivot.
+
+#### 5.2: How I Am Achieving This (The Learning Plan)
+* **Active Project:** My "AI Agents Lab" project (see `AI_RAG_Chatbot_Python_Lab_Case.md`) is my primary learning vehicle. This is where I am mastering **Python**, **RAG architectures**, **LangChain**, and **Vector Databases (ChromaDB)**.
+* **Supporting Certifications:** I am pursuing the **Azure Solutions Architect (AZ-305)** certification *specifically* to learn how to architect robust cloud infrastructure capable of supporting AI and ML workloads at scale.
+
+#### 5.3: What I Am Looking For
+I am actively seeking a role as a **Backend Developer (with AI focus)**, **Cloud Engineer (with AI projects)**, or a **Junior/Mid-Level AI Engineer**. I am looking for a high-performance team where I can apply my Python/RAG skills while leveraging my deep .NET/Azure expertise.
+
+-----
+
+### **SECTION 6: RAG Keyword Index**
+
+(Internal list for RAG metadata)
+
+  * Backend Developer, Cloud Developer, API Developer
+  * .NET Developer, C\# Developer, ASP.NET Core
+  * Azure Developer, Azure Functions, Azure API Management, APIM
+  * API Gateway, RESTful APIs, Minimal APIs
+  * OpenAPI, Swagger, OAuth 2.0, Azure DevOps, CI/CD
+  * DevOps, ApiOps, Microservices, Cloud Architecture
+  * Microsoft Azure, AZ-900, AZ-204
+  * Git, Agile, Scrum, Solution Developer
+  * AI Engineering, RAG, LangChain, Python
+  * Madrid, Spain, Hybrid Work, Remote Work
