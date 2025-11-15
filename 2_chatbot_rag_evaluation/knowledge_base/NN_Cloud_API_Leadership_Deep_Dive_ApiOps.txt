@@ -1,0 +1,110 @@
+## Professional Deep Dive (Nationale-Nederlanden)
+
+### **SECTION 1: Role Summary & Technical Environment**
+
+* **Company:** Nationale-Nederlanden (NN), Spain (Insurance & Finance)
+* **Role:** API Designer & Cloud Solution Developer
+* **Duration:** 3 Years (Nov 2022 - Present)
+* **Core Environment:** Microsoft Azure
+* **Core Stack:** C# .NET (6/7/8), ASP.NET Core (REST APIs), Azure Functions, Logic Apps
+* **Key Methodologies:** **Agile (Scrum/Kanban)**, **API-First Design**, DevOps (ApiOps)
+* **Core Tools:** Azure API Management (APIM), Azure DevOps, OpenAPI 3.0, Git
+
+### **SECTION 2: Flagship Achievement: Architecting the "ApiOps" Transformation**
+
+This was one of the most impactful projects of my career. I identified a major bottleneck in our deployment model and, alongside my Tech Lead, championed and implemented a new **ApiOps** strategy that revolutionized our workflow.
+
+#### **2.1: The Problem: The "Antiquated" Deployment Model**
+
+When I joined, the API deployment lifecycle was:
+* **Manual & Error-Prone:** Deployments required significant manual intervention from multiple operators (often 2 or more), leading to a high risk of human error.
+* **Slow Time-to-Market:** The process was slow, delaying the release of new features and fixes.
+* **Environment Misalignment:** Development, Testing, and Production environments would frequently drift out of sync, causing "it works on my machine" issues.
+* **Lack of Governance:** API standards were inconsistent as there was no automated enforcement.
+
+#### **2.2: The Solution: The "ApiOps" Model (DevOps for APIs)**
+
+We migrated to a modern **ApiOps** model, which treats the **OpenAPI 3.0 specification as the single source of truth**. This Git-centric approach allowed us to automate the entire API lifecycle.
+
+The core principle is: **The API contract (code) defines the deployment.**
+
+#### **2.3: The "How": Technical Implementation**
+
+1.  **Azure DevOps Pipelines:** We built a complete, end-to-end **CI/CD pipeline in YAML** within Azure DevOps.
+2.  **API-First Enforcement:** The pipeline's first step was to validate the OpenAPI contract. We integrated **Stoplight Spectral** for automated linting, ensuring all API changes adhered to our organizational standards *before* they could even be merged.
+3.  **Automated Deployment:** The pipeline automatically deployed the API (or new revisions) to **Azure API Management (APIM)**.
+4.  **Environment Synchronization:** This model allows us to deploy a new API revision across all environments (Dev, TST, PRD) simultaneously but keep it "inactive" in production. We can then "flip the switch" (activate the new revision) instantly when the business is ready, enabling seamless, zero-downtime releases.
+
+#### **2.4: The Measurable Impact (The "Sell")**
+
+This transformation was not just a technical exercise; it had profound business value:
+* **70% Reduction in Deployment Time:** What used to take days of coordination now takes minutes of automated pipeline execution.
+* **90% Reduction in Production Errors:** By validating contracts automatically, we eliminated an entire class of human errors related to environment configuration and contract mismatches.
+* **Operator Efficiency:** We reduced the human overhead for a deployment from **2+ operators to less than 1** (often just "0.5" for oversight).
+* **Developer Autonomy:** We are now building an internal web portal on top of this ApiOps model to give developers even more control and self-service capabilities.
+
+---
+
+### **SECTION 3: Core Development: .NET Backend & Serverless**
+
+My primary responsibility was the hands-on development of the backend services that power the company's digital offerings.
+
+* **RESTful API Development:** Designed and built secure, high-performance **RESTful APIs** using **C#** and **ASP.NET Core** (including modern **Minimal APIs**).
+* **Azure Functions (Serverless):** Developed numerous **Azure Functions** for event-driven and serverless compute. This included HTTP Triggers for lightweight APIs, Timer Triggers for scheduled tasks, and Queue Triggers for robust, asynchronous background processing.
+* **Azure Logic Apps (Orchestration):** Implemented **Logic Apps** to create complex, automated workflows that integrated multiple disparate systems (both internal and third-party) with minimal code.
+
+---
+
+### **SECTION 4: Deep Expertise: Azure API Management (APIM)**
+
+I became a subject-matter expert in managing our central **Azure API Management (APIM)** gateway. My work went far beyond standard configuration implementing a managing azure policies in APIM also.
+
+#### **4.1: Security & Authentication Evolution**
+
+I led a critical security migration from standard OAuth 2.0 to **Managed Identities**.
+* **Why?** This move significantly enhanced our security posture. It eliminated the need to store and manage secrets (like client secrets or certificates) in our applications, replacing them with secure, automatically-managed identities in Azure AD. This enabled fine-grained, role-based access control (RBAC) to other Azure resources.
+
+#### **4.2: Strategy: Product & Subscription Model**
+
+I architected a complete overhaul of our APIM product strategy.
+* **Before:** We used a 1:1 model (`1 Product per 1 API`). This was simple but unmanageable at scale.
+* **After:** We migrated to a **Consumer-Centric Model** (`1 Product per 1 Consumer`).
+* **Impact:** This shift gave us **massively improved manageability**. We can now apply policies, track usage analytics, and manage access (subscriptions) on a per-consumer basis, which is far more logical and scalable.
+
+#### **4.3: Policy & Contract Design**
+
+* **Advanced Policy Implementation:** Authored and debugged complex **APIM policies (XML)** to handle authentication (JWT validation), rate-limiting, request/response transformation, and dynamic routing.
+* **Contract Redesign:** I meticulously redesigned and refactored our **OpenAPI 3.0** contracts, implementing reusable components and inheritance patterns. This cleanup (as noted in my `Core_Professional_Profile`) resulted in a **6.4% reduction in code lines** while improving readability and consistency.
+
+---
+
+### **SECTION 5: Key Business-Facing Projects**
+
+My development work was directly tied to major business initiatives.
+
+* **Mortgage Cross-Selling Platform:** I was a key developer on the backend services for a new **mortgage cross-selling initiative**. This project involved creating the APIs to integrate our core banking systems with insurance products, allowing the company to offer new, bundled value to customers.
+* **Internal Developer Portal:** I am currently developing a new **internal web portal** (as mentioned in the ApiOps section). This tool will act as the "UI" for our ApiOps pipelines, giving developers a self-service platform to manage their APIs, further automating and simplifying the development lifecycle.
+
+---
+
+### **SECTION 6: Overall Professional Impact & Growth**
+
+My three years at Nationale-Nederlanden have been a period of intense professionalization. I evolved from a developer into a **solutions architect** and **technical evangelist**. I learned not only how to build clean, scalable .NET code but how to design the entire cloud ecosystem (ApiOps, APIM, Serverless) that supports it. This role taught me to balance technical purity with the velocity demanded by an Agile business.
+
+---
+
+### **SECTION 7: RAG Keyword Index**
+
+(Internal list for RAG metadata)
+
+* Nationale-Nederlanden, NN
+* ApiOps, DevOps, CI/CD, Azure DevOps, YAML
+* Azure API Management, APIM, API Gateway
+* API-First, OpenAPI 3.0, Stoplight Spectral
+* C#, .NET 8, ASP.NET Core, Minimal APIs
+* Azure Functions, Logic Apps, Serverless
+* Managed Identities, OAuth 2.0, Security
+* Cloud Solution Developer, API Designer
+* Agile, Scrum
+* Mortgage Cross-Selling, FinTech, Insurance
+* APIM Policies, APIM Products, APIM Subscriptions

@@ -1,0 +1,69 @@
+## AI Learning & Project Lab
+
+### **SECTION 1: Project Core Summary**
+
+This document details my personal AI engineering lab, built to transition my skills from .NET to Python-based AI development.
+
+#### **1.1: Metadata (Fact Sheet)**
+
+* **Project Name:** [AI Agents Lab (Personal Learning Repository)](https://github.com/AitorBermeRuiz/ai-agents-lab)
+* **Status:** Active Development
+* **Purpose:** A hands-on "sandbox" to learn and implement Agentic AI concepts, AI architectures, and the Python data stack.
+* **Context:** Self-directed learning, guided by resources like the "Mastering Agentic AI" course.
+* **Core Technologies:** Python, RAG (Retrieval-Augmented Generation), LangChain, ChromaDB, OpenAI API, Google Gemini API, Gradio.
+* **Technologies (Exploring):** CrewAI, LangGraph, Multi-Agent Systems.
+
+#### 1.2: Professional Value Statement (The "Why")
+
+> This project is the primary evidence of my proactive transition into **AI Engineering** and represents my entire **personal learning initiative**. As an experienced **C#/.NET developer**, I am using this lab to learn the **Python** ecosystem from the ground up and build practical, end-to-end AI applications. It demonstrates initiative, self-directed learning, and the ability to master new, complex technology stacks.
+
+---
+
+### **SECTION 2: Key Completed Project: RAG Chatbot with Auto-Evaluation**
+
+This is the flagship mini-project of the lab, demonstrating a complete RAG pipeline.
+
+#### **2.1: Project Overview**
+
+* **Status:** Functional and in continuous improvement.
+* **Description:** A conversational AI chatbot that uses a **RAG (Retrieval-Augmented Generation)** pipeline to answer questions based on a private, local knowledge base.
+
+#### **2.2: Core Features & Architecture**
+
+1.  **RAG Pipeline:** Implemented from scratch using **LangChain** for orchestration. It loads, splits, embeds (via HuggingFace), and stores documents in a **ChromaDB** vector database.
+2.  **Conversational Chat:** Uses the **OpenAI API (GPT-4/GPT-3.5)** to generate context-aware answers based on retrieved documents.
+3.  **Automatic Evaluation:** A unique feature where the chatbot's own response is evaluated for quality by a separate AI call to the **Google Gemini API**. If the score is low, it attempts to re-generate the answer.
+4.  **UI:** A simple web interface built with **Gradio** for quick prototyping and demonstration.
+5.  **Code Structure:** Built on a modular Python architecture (Controller, RAG, Chat, Evaluator) to ensure separation of concerns.
+
+#### **2.3: Skills Demonstrated (The "Proof")**
+
+* **Python Development:** Proves my ability to learn and build functional applications in Python, coming from a C# background.
+* **RAG Expertise:** Deep, practical understanding of the entire RAG lifecycle (Load, Chunk, Embed, Retrieve, Generate).
+* **Vector Databases:** Hands-on experience with **ChromaDB** for semantic search.
+* **Multi-API Integration:** Successfully integrated and orchestrated three distinct services: **OpenAI** (generation), **Google Gemini** (evaluation), and **HuggingFace** (embeddings).
+* **AI Application Architecture:** Designed a modular, event-driven flow for a complex AI task.
+
+---
+
+### **SECTION 3: Current Learning & Next Steps**
+
+My learning is continuous. While the RAG chatbot is functional, I am actively exploring the next phase of Agentic AI.
+
+* **Current Focus:** Mastering advanced **Python** concepts (async/await, dependency management) and optimizing the RAG pipeline.
+* **Next Steps:** My immediate learning goal is to move from single-pipeline RAG to multi-agent systems. I am actively beginning to experiment with frameworks like **CrewAI** and **LangGraph** to build systems where multiple AI agents collaborate on complex tasks.
+
+---
+
+### **SECTION 4: RAG Keyword Index**
+
+(Internal list for RAG metadata)
+
+* Python, AI Engineering, AI Agents, Agentic AI
+* RAG, Retrieval-Augmented Generation
+* LangChain, ChromaDB, Vector Database
+* OpenAI API, Google Gemini API, HuggingFace
+* Gradio, Chatbot, AI Chatbot
+* Learning Project, Personal Project
+* CrewAI, LangGraph, Multi-Agent Systems
+* C# to Python transition

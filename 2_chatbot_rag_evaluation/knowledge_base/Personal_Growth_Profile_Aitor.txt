@@ -1,0 +1,55 @@
+## Personal Growth Profile & Philosophy
+
+### **SECTION 1: Core Personal Philosophy (The "Why")**
+
+If I had to describe myself in one word, it would be: athletic, dreamer, ambitious, small circle of quality friends, and finally, loyal. His principles.
+
+#### **1.2: Introspection & Ethics**
+
+* **What sets me apart?** My focus on continuous growth — both professional and personal. I firmly believe in introspection, lifelong learning, and holistic development (mental and physical).
+* **Work Philosophy:**
+    * **Ownership:** I take full responsibility for my projects and outcomes.
+    * **Agile Mindset:** Quick adaptation to new models and methodologies.
+    * **Innovation:** Always exploring new technologies and best practices (e.g., ApiOps, RAG).
+    * **Collaboration:** I value teamwork and knowledge sharing.
+* **Keywords RAG:** Ownership, Accountability, Collaboration, Ethics, Work Philosophy.
+
+---
+
+### **SECTION 2: Personal Context & Hobbies (The "Who")**
+
+
+#### **2.1: Physical & Mental Discipline**
+
+* I love working out — especially weightlifting and running — traveling, and spending quality time with the people I care about.
+
+Fun fact: I really enjoy reading, particularly ancient Stoic philosophy books by authors like Seneca and Marcus Aurelius.
+
+Overall, I consider myself a mature, focused, and calm person who truly enjoys something as simple as having a coffee in the sun.
+
+One of the trips that had the biggest impact on me was when I lived in Dublin, Ireland, for two months. I had to learn to live alone in a foreign country, far from my family, and above all, it was a huge step forward in improving my English.
+
+* **Keywords RAG:** Discipline, Books, Read, Goal Management, Resilience, Work-Life Balance, hobbies English.
+
+---
+
+### **SECTION 3: Future & Motivation (The "Drive")**
+
+#### **3.1: The Why Behind the Transition**
+
+* **Reinforcement:** My desire to move from being a skilled .NET developer to an **AI Systems Engineer** is my main driving force.
+* **Motivation:** I’m not looking for a simple technology shift, but to **apply my experience in enterprise architecture** (Azure, APIs, scalability) to AI systems.
+* **Keywords RAG:** Career Driver, Professional Motivation, Strategic Pivot, Scalability Focus.
+
+#### **3.2: Long-Term Aspirations**
+
+* **Long Term (3+ years):**
+    * Evolve into a **Technical Leadership** role (Tech Lead / Principal Engineer).
+    * **Formal mentoring** of junior developers.
+    * Specialization in large-scale distributed systems.
+* **Keywords RAG:** Tech Lead, Principal Engineer, Mentorship, High-Scale Systems, Distributed Systems.
+---
+
+### **SECTION 4: RAG Keyword Index (Internal)**
+
+* **RAG Keywords:** Personal Growth, Philosophy, Work Ethic, Discipline, Hobbies, Introspection, Mentorship, Leadership, Humility, Learning Initiative, Physical Fitness.
