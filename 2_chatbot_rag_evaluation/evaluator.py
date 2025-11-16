@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from openai import OpenAI
+from openai import AsyncOpenAI
 import os
 from dotenv import load_dotenv
 
@@ -15,7 +15,7 @@ class Evaluator:
     def __init__(self, name="", model=MODEL):
         load_dotenv(override=True)
         api_key = os.getenv("GOOGLE_API_KEY")
-        self.gemini = OpenAI(api_key=api_key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
+        self.gemini = AsyncOpenAI(api_key=api_key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
         self.name = name
         self.model = model
 
@@ -32,12 +32,12 @@ class Evaluator:
                f"Here's the latest message from the User: \n\n{message}\n\n" \
                f"Here's the latest response from the Agent: \n\n{reply}\n\n" \
                "Please evaluate the response, replying with whether it is acceptable and your feedback."
-        
-    def evaluate(self, reply, message, history) -> Evaluation:
-        message=[
-            {"role": "system", "content": self._evaluator_system_prompt()} 
-            ] + [
+
+    async def evaluate(self, reply, message, history) -> Evaluation:
+        messages = [
+            {"role": "system", "content": self._evaluator_system_prompt()}
+        ] + [
             {"role": "user", "content": self._evaluator_user_prompt(reply, message, history)}
         ]
-        response = self.gemini.beta.chat.completions.parse(model=self.model, messages=message, response_format=Evaluation)
+        response = await self.gemini.beta.chat.completions.parse(model=self.model, messages=messages, response_format=Evaluation)
         return response.choices[0].message.parsed
